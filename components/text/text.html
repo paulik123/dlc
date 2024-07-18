@@ -1,0 +1,19 @@
+<div hx-vals='{"key": "{{key}}", "registered_name": "{{registered_name}}"}' hx-swap-oob="morphdom" id="com-{{key}}">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">
+                Live component
+            </h3>
+            <form ws-send hx-vals='{"method": "set_pule"}' hx-trigger="input">
+                <div class="mb-3">
+                    <input class="form-control mb-3" type="text" name="pule" value="{{pule}}" id="dddd" hx-swap-oob="morphdom">
+                </div>
+            </form>
+        </div>
+        <div class="card-footer">
+            <span>{{pule}}</span>
+        </div>
+    </div>
+</div>
+
+
